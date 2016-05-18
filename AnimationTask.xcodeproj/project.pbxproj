@@ -15,6 +15,8 @@
 		4085CF761CB4D10D00F27AC2 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4085CF741CB4D10D00F27AC2 /* LaunchScreen.storyboard */; };
 		4085CF811CB4D10D00F27AC2 /* AnimationTaskTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 4085CF801CB4D10D00F27AC2 /* AnimationTaskTests.m */; };
 		4085CF8C1CB4D10D00F27AC2 /* AnimationTaskUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 4085CF8B1CB4D10D00F27AC2 /* AnimationTaskUITests.m */; };
+		7C8F222B1CEC068000C5F612 /* CABasicAnimationManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 7C8F222A1CEC068000C5F612 /* CABasicAnimationManager.m */; };
+		7C8F222E1CEC06B100C5F612 /* LayerAnimationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7C8F222D1CEC06B100C5F612 /* LayerAnimationViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +53,10 @@
 		4085CF871CB4D10D00F27AC2 /* AnimationTaskUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AnimationTaskUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		4085CF8B1CB4D10D00F27AC2 /* AnimationTaskUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AnimationTaskUITests.m; sourceTree = "<group>"; };
 		4085CF8D1CB4D10D00F27AC2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		7C8F22291CEC068000C5F612 /* CABasicAnimationManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CABasicAnimationManager.h; sourceTree = "<group>"; };
+		7C8F222A1CEC068000C5F612 /* CABasicAnimationManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CABasicAnimationManager.m; sourceTree = "<group>"; };
+		7C8F222C1CEC06B100C5F612 /* LayerAnimationViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LayerAnimationViewController.h; sourceTree = "<group>"; };
+		7C8F222D1CEC06B100C5F612 /* LayerAnimationViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LayerAnimationViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -101,6 +107,7 @@
 		4085CF651CB4D10D00F27AC2 /* AnimationTask */ = {
 			isa = PBXGroup;
 			children = (
+				7C8F22281CEC066700C5F612 /* CABasicAnimationManager */,
 				4085CF9E1CB4D15000F27AC2 /* ParticleAnaimation */,
 				4085CF9D1CB4D14000F27AC2 /* DynamicAnimation */,
 				4085CF9C1CB4D13B00F27AC2 /* TransitionAnimation */,
@@ -156,6 +163,8 @@
 		4085CF9A1CB4D11E00F27AC2 /* LayerAnimation */ = {
 			isa = PBXGroup;
 			children = (
+				7C8F222C1CEC06B100C5F612 /* LayerAnimationViewController.h */,
+				7C8F222D1CEC06B100C5F612 /* LayerAnimationViewController.m */,
 			);
 			name = LayerAnimation;
 			sourceTree = "<group>";
@@ -186,6 +195,15 @@
 			children = (
 			);
 			name = ParticleAnaimation;
+			sourceTree = "<group>";
+		};
+		7C8F22281CEC066700C5F612 /* CABasicAnimationManager */ = {
+			isa = PBXGroup;
+			children = (
+				7C8F22291CEC068000C5F612 /* CABasicAnimationManager.h */,
+				7C8F222A1CEC068000C5F612 /* CABasicAnimationManager.m */,
+			);
+			name = CABasicAnimationManager;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -319,6 +337,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				4085CF6E1CB4D10D00F27AC2 /* ViewController.m in Sources */,
+				7C8F222E1CEC06B100C5F612 /* LayerAnimationViewController.m in Sources */,
+				7C8F222B1CEC068000C5F612 /* CABasicAnimationManager.m in Sources */,
 				4085CF6B1CB4D10D00F27AC2 /* AppDelegate.m in Sources */,
 				4085CF681CB4D10D00F27AC2 /* main.m in Sources */,
 			);
@@ -546,6 +566,7 @@
 				4085CF921CB4D10D00F27AC2 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		4085CF931CB4D10D00F27AC2 /* Build configuration list for PBXNativeTarget "AnimationTaskTests" */ = {
 			isa = XCConfigurationList;
@@ -554,6 +575,7 @@
 				4085CF951CB4D10D00F27AC2 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		4085CF961CB4D10D00F27AC2 /* Build configuration list for PBXNativeTarget "AnimationTaskUITests" */ = {
 			isa = XCConfigurationList;
@@ -562,6 +584,7 @@
 				4085CF981CB4D10D00F27AC2 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

@@ -48,6 +48,13 @@ static NSString * const kCellID = @"kCellID";
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
 {
    // TODO: Finish Click Action
+    NSString *className = [self.animationNames[indexPath.row] stringByAppendingString:@"ViewController"];
+    
+    Class cls = NSClassFromString(className);
+    if (cls) {
+        UIViewController *vc = [[cls alloc] init];
+        [self.navigationController pushViewController:vc animated:YES];
+    }
     
 }
 
